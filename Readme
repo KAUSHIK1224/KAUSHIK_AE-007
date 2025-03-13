@@ -1,0 +1,39 @@
+AI-Powered Income Prediction Tool - Technical Overview
+📌 Project Overview
+This project is an AI-based Income Prediction System that estimates whether an individual’s annual income is above or below $50K based on various socio-economic factors. The model was trained as part of my Professional Training 1 (PT-1) in my last semester at Sathyabama Institute of Science and Technology, Chennai.
+
+It utilizes data from the UCI Adult Dataset, which includes demographic and employment-related attributes. The model is trained using a supervised learning algorithm to classify income levels based on these features.
+
+📊 Data Preprocessing & Features
+The dataset contains 48,842 records and 14 features, including both numerical and categorical variables:
+
+Numerical Features: Age, Education-Num, Capital-Gain, Capital-Loss, Hours-Per-Week
+Categorical Features: Workclass, Education Level, Marital-Status, Occupation, Relationship, Race, Sex, Native-Country
+To preprocess the data:
+
+Handled Missing Values: Removed rows containing missing categorical values
+Encoding Categorical Variables: Applied one-hot encoding to transform categorical data
+Feature Scaling: Normalized numerical features to bring them to a similar scale
+Balanced Classes: The dataset had a class imbalance between high-income and low-income groups, which was addressed using class weighting
+📌 Technical Details:
+✔ Dataset Used: UCI Adult Dataset (Census Income Data)
+✔ Feature Engineering: One-hot encoding for categorical features
+✔ Machine Learning Model: Random Forest Classifier (100 estimators, Gini Impurity, Max Depth tuning)
+✔️ Training & Testing Split: 80-20% split (Stratified Sampling)
+✔️ Hyperparameter Tuning: Used Grid Search CV for optimal hyperparameters
+✔️ Performance Metrics: Accuracy, Precision, Recall, F1-score, ROC-AUC
+
+📊 Deployment Details:
+✔ Frontend: Gradio UI for easy user interaction (Sliders & Dropdowns for input features)
+✔ Backend & Model Implementation: Python, scikit-learn, pandas, NumPy
+✔ Hosting Platform: Hugging Face Spaces using Gradio Interface
+✔ Inference: Takes user inputs, processes categorical variables, applies feature encoding, and runs predictions in real time
+
+🔗 Links:
+📌 Live Demo: [Your Hugging Face App Link]
+📌 GitHub Repo: [Your GitHub Link]
+
+📢 Collaborators:
+This project was completed as a part of my Professional Training 1 (PT-1) in my last semester at Sathyabama Institute of Science and Technology, Chennai. Special thanks to my partner, [Partner’s Name], for their support and contributions to the project!
+
+Would love to discuss more on how AI can be leveraged for real-world income and employability predictions! Feel free to share your insights. 🚀
